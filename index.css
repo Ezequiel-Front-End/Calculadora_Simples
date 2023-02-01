@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');/* configurações basicas do HTML */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("Fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: center;
+}
+
+/* configurações do Card da Calculadora */
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width:340px;
+    padding: 10px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    border-radius:5px;
+    box-shadow: 1px 1px 10px rgba(0,  0, 0, 0.9);
+    text-align: center;
+}
+
+.container .titulo{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0,  0, 0, 0.9);
+}
+
+.container .input-numbers {
+    margin-top: 20px;
+}
+
+
+.container .input-numbers input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 9px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,  0, 0, 0.9);
+    background: transparent;
+    color: white;
+}
+
+.container .input-numbers input::placeholder{
+    color: white;
+}
+
+
+.container .input-buttons{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .input-buttons button{
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 1px 1px 10px rgba(0,  0, 0, 0.9);
+    transition: all 0.3s ease-in-out;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.container .input-buttons button:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px white;
+}
+
+.container p{
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    color:white;
+}
+
+
+.container p span {
+    font-size: 30px;  
+    color: green;
+}
