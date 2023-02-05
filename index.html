@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Formulario</title>
 </head>
 <body>
-    <!-- Card da Calculadora -->
     <div class="container">
-    <div class="titulo">
-        <h2>Calculadora Simples</h2>
-    </div>
-    <div class="input-numbers">
-        <input class="n1" type="number" placeholder="Digite um numero" required>
-        <input class="n2" type="number" placeholder="Digite outro numero" required>
-    </div>
-    <div class="input-buttons">
-        <button class="Somar">Somar</button>
-        <button class="Subtrair" >Subtrair</button>
-        <button class="Multiplicar">Multiplicar</button>
-        <button class="Dividir">Dividir</button>
-    </div>
-    <p>
-        O resultado é <br> <span></span>
-    </p>
-        
+    <fieldset class="Card-Form">
+    <form action="" method="post">
+        <div class="titulo">
+        <h2>Formulario</h2>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Nome" required>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Sobrenome" required>
+        </div>
+        <div class="input">
+            <input type="emal" placeholder="Email" required>
+        </div>
+        <div class="input">
+        <textarea  id="" cols="25" rows="5" placeholder="Escreva aqui..."></textarea>
+        <div class="titulo-nivel">
+            <p>Nivel</p>
+        </div>
+        <div class="nivel">
+            <input list="nivel">
+        <datalist id="nivel">
+        <option value="Trainee"></option>
+        <option value="Junior"></option>
+        <option value="Senior"></option>
+        <option value="Master"></option>
+        </datalist>
+        </div>
+        <div class="titulo-genero">
+            <p>Genero</p>
+        </div>         
+        <div class="genero">      
+            <label for="">Masculino</label>
+            <input type="radio" name="genero">    
+            <label for="">Feminino</label>
+            <input type="radio" name="genero">        
+        </div>
+        </div>
+        <div class="titulo-tecnologia">
+            <p>Tecnologias</p>
+        </div>
+        <div class="tecnologias">             
+            <input type="checkbox" name="" id=""><span>PHP</span>
+            <input type="checkbox" name="" id=""><span>HTML</span>
+            <input type="checkbox" name="" id=""><span>CSS</span>
+            <input type="checkbox" name="" id=""><span>JAVA</span>
+        </div>   
+        <div class="input">
+            <input type="submit" class="Enviar" value="Enviar">
+        </div>
+        </form>
+    </fieldset>
     </div>
 </body>
 </html>
